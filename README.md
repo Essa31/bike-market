@@ -1,6 +1,6 @@
-# LAB - Class 29
+# LAB : Class 29
 
-### Project:game-store
+### Project: game-store
 
 ### Author: Essa Iyad Abu al-Khair
 
