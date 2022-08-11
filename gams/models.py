@@ -8,8 +8,9 @@ from accounts.models import CustomUser
 # Create your models here.
 class Game(models.Model):
     name = models.CharField(max_length=69)
-    purchaser = models.ForeignKey(get_user_model(), on_delete=models.CASCADE)
+    purchaser = models.ForeignKey(CustomUser(), on_delete=models.CASCADE)
     desc = models.TextField()
+
 
     def __str__(self):
         return self.name
