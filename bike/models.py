@@ -6,7 +6,7 @@ from accounts.models import CustomUser
 
 
 # Create your models here.
-class Game(models.Model):
+class Bike(models.Model):
     name = models.CharField(max_length=69)
     purchaser = models.ForeignKey(CustomUser(), on_delete=models.CASCADE)
     desc = models.TextField()
@@ -16,4 +16,4 @@ class Game(models.Model):
         return self.name
 
     def get_absolute_url(self):
-        return reverse('game_list')
+        return reverse('bike_list')

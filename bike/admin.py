@@ -1,16 +1,16 @@
 from django.contrib import admin
 
-from .models import Game
+from .models import Bike
 # Register your models here.
 
 
 class CustomSnackAdmin(admin.ModelAdmin):
-    model = Game
+    model = Bike
     fieldsets = (
         ('Owner', {
             'fields' : ('purchaser',)
         }),
-        ('Game Info', {
+        ('Bike Info', {
             'fields':(
                 'name',
                 'desc'
@@ -23,4 +23,4 @@ class CustomSnackAdmin(admin.ModelAdmin):
     search_fields = ('name', 'desc')
 
 
-admin.site.register(Game, CustomSnackAdmin)
+admin.site.register(Bike, CustomSnackAdmin)

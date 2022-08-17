@@ -6,7 +6,7 @@ urlpatterns = [
     path("admin/", admin.site.urls),
     path("accounts/", include("allauth.urls")),
     path("", include("pages.urls")),
-    path("", include("gams.urls")),
+    path("", include("bike.urls")),
 ]
 
 if settings.DEBUG:

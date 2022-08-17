@@ -30,7 +30,7 @@ INSTALLED_APPS = [
     # Local
     "accounts",
     "pages",
-    "gams",
+    "bike",
 ]
 
 # MIDDLEWARE
